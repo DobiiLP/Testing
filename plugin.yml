@@ -1,0 +1,17 @@
+name: FirstPlugin
+main: io.github.dobiilp.testing.FirstPlugin.FirstPlugin
+version: 0.1a
+commands:
+    heal:
+        description: Heals yourself or specific player
+        usage: /<command> [Player]
+        permission: firstplugin.heal
+        permission-message: You don't have the following permission: <permission>
+permissions:
+    dobiisentials.*:
+        description: Enables the whole dobiisentials plugin! NOT RECOMMENDED!
+        children:
+            dobiisentials.heal: true
+    dobiisentions.heal:
+        description: Heals yourself or a specified player
+        default: op
